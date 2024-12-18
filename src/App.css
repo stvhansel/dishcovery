@@ -1,0 +1,253 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*NAVBAR*/
+.logo{
+  font-family: 'Croissant One';
+}
+
+.searchField{
+  font-family: 'Poppins';
+}
+
+.searchBtn{
+  font-family: 'Poppins';
+}
+
+.header-resp{
+  font-family: 'Ultra';
+}
+
+/*HERO IMAGES*/
+.hero-img{
+  object-fit: cover;
+}
+
+.header{
+  font-size: 52px;
+  font-family: 'Ultra';
+}
+
+.desc{
+  font-family: 'Poppins';
+  text-align: justify;
+}
+
+/*SECTION 01*/
+.sect1{
+  margin-top: 100px;
+}
+
+.sect1-header{
+  font-family: 'Ultra';
+}
+
+.sect1-smheader{
+  font-family: 'Poppins';
+}
+
+.card{
+  width: 18rem;
+}
+
+.card-img{
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title{
+  font-family: 'Alegreya';
+}
+
+.card-text{
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+/*FOOTER*/
+.foot-desc{
+  color: white;
+}
+
+/*POPUP*/
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  max-width: 600px; 
+  max-height: 80%; 
+  overflow-y: auto; 
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  animation: pop-out 0.3s ease-in-out; 
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 991px) {
+
+  /*HERO IMAGE*/
+  .header{
+    font-size: 30px;
+  }
+
+  .desc{
+    font-size: 15px;
+  }
+
+  /*APP RESP*/
+  .header-resp{
+    font-size: 30px;
+  }
+
+  .desc-resp{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*HERO IMAGE*/
+  .header{
+    font-size: 25px;
+  }
+
+  .desc{
+    font-size: 12px;
+  }
+
+  /*APP RESP*/
+  .header-resp{
+    font-size: 25px;
+  }
+
+  .desc-resp{
+    font-size: 15px;
+  }
+}
+
+
+/*ANIMATION*/
+.fade-in {
+  animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in-down {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: slideInAnimation 1.5s ease forwards;
+}
+
+@keyframes slideInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-right {
+opacity: 0;
+transform: translateX(100%);
+animation: slideInRightAnimation 1.5s ease forwards;
+}
+
+@keyframes slideInRightAnimation {
+from {
+  opacity: 0;
+  transform: translateX(100%);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeftAnimation 1.5s ease forwards;
+}
+
+@keyframes slideInLeftAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card.ho {
+  transition: transform 0.3s ease;
+}
+
+.card.ho:hover {
+  transform: scale(1.05);
+}
+
+.popup-content.pop-in {
+  animation: pop-in 0.3s ease-in-out; 
+}
+
+.close-button {
+  animation: pop-out in 0.3s ease-in-out;
+}
+
+@keyframes pop-out {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(0);
+  }
+}
+
+@keyframes pop-in {
+  from {
+      transform: scale(0.5);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+/*ALL RECIPES*/
+.smHeadRecipe{
+  font-family: 'Alegreya';
+}
+
+.links{
+  font-family: 'Alegreya';
+}
+
+.recipe-img{
+  object-fit: fill;
+}
